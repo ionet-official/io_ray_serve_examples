@@ -4,7 +4,7 @@ from ray import serve
 from ray.serve.handle import DeploymentHandle
 from transformers import pipeline
 
-@serve.deployment
+@serve.deployment(num_replicas=1, ray_actor_options={"num_gpus": 0.5}, max_replicas_per_node=2) 
 class Tgenerator:
     def __init__(self):
         # Load model
@@ -17,7 +17,7 @@ class Tgenerator:
         print(f"{result}")
         return result
 
-@serve.deployment
+@serve.deployment(num_replicas=1, ray_actor_options={"num_gpus": 0.5}, max_replicas_per_node=2) 
 class Qgenerator:
     """
     This class is responsible for generating a question from a fetched text from request data.
