@@ -22,7 +22,7 @@
 - test inference transformers
     * go to path `client_test`, run command `python remote_test.py` 
 - test inference diffusers
-    - open link
-    * [https://](https://vscode-{cl_id}.tunnels.io.systems/proxy/8000/imagine?prompt={your_text})
-    - get result 
-    ![alt text](<2024-07-15 at 19.00.04.png>)
+    
+    * open link [https://vscode-{cl_id}.tunnels.io.systems/proxy/8000/imagine?prompt={your_text}](https://vscode-{cl_id}.tunnels.io.systems/proxy/8000/imagine?prompt={your_text})
+
+    - get result ![alt text](<2024-07-15 at 19.00.04.png>)
