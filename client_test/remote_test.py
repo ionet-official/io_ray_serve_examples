@@ -39,7 +39,7 @@ async def make_request(session, url, data, auth_header):
 
 async def main():
     #change url_id to your's
-    url_id = '0a7dc'
+    url_id = '0f580'
     url = f"https://vscode-{url_id}.tunnels.io.systems/proxy/8000/"
 
     username = 'IDE_PASSWORD'
