@@ -37,7 +37,7 @@ class APIIngress:
 )
 class StableDiffusionV2:
     def __init__(self):
-        from diffusers import EulerDiscreteScheduler, DiffusionPipeline, StableDiffusionPipeline, StableDiffusion3Pipeline
+        from diffusers import EulerDiscreteScheduler, DiffusionPipeline
 
         model_id = "SG161222/RealVisXL_V4.0" 
 
