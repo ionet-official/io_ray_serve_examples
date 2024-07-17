@@ -67,6 +67,4 @@ if __name__ == "__main__":
         else:
             packages_to_install.append(arg)
 
-    # Add any additional command-line arguments to the list of packages to install
-    packages_to_install.extend(args)
     run_task_on_all_nodes(packages_to_install)
